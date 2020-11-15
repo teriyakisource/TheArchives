@@ -39,7 +39,7 @@ function getContent(loc)
                 })
                 console.log(p)
 
-                document.getElementById("content").innerHTML += "<a href='content.html#" + p[2] +"'><div class='thumb'> <div class='thumbcontent'>   <h3>" + p[1] + "<img src='" + p[0] + "'</div></div></a>"
+                document.getElementById("content").innerHTML += "<a target='_blank' href='content.html#" + p[2] +"'><div class='thumb'> <div class='thumbcontent'>   <h3>" + p[1] + "<img src='" + p[0] + "'</div></div></a>"
                 
                 
                 
