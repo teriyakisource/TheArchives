@@ -1,0 +1,46 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="asda">
+
+    </div>
+    
+
+
+    <script>
+        let arg = window.location.href.substr(window.location.href.indexOf("#") + 1)
+        
+        var vid = ["webm", "mp4", "mpeg", "avi", "wmv"]
+        var pic=["png", "jpeg", "gif", "jpeg", "svg", "webp"]
+
+
+        let end = arg.substr(-6)
+        console.log(end)
+        let ext = end.substr(end.indexOf(".")+1)
+        console.log(ext)
+        
+
+        if (vid.includes(ext))
+        {
+            document.getElementById("asda").innerHTML = "<video controls><source src='" + arg + "' type='video/mp4'></video>";
+        }
+        else if(pic.includes(ext))
+        {
+            document.getElementById("asda").innerHTML = "<img src='"+arg+"'/>";
+        }
+        else
+        {
+            window.location.href = arg;
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

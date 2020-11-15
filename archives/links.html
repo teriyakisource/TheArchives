@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Archives</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../src/auth.js"></script>
+  </head>
+  <body>
+      <div class="container">
+          <button onclick="signOut()">Sign Out</button>
+          <button onclick="window.location.href='../home.html'">Back</button>
+          
+          <br><br>
+
+          <h1>The Archives</h1>
+          <h4>Links</h4>
+
+          <br>
+
+          <div id="content" class="content">
+
+          </div>
+          
+            <br>
+            <br>    
+      </div>
+
+    <script src="../src/main.js"></script>
+    <script>
+        getContent("links")
+    </script>
+  </body>
+</html>
